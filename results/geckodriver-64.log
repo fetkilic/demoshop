@@ -1,0 +1,84 @@
+1746558478254	geckodriver	INFO	Listening on 127.0.0.1:50831
+1746558481439	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50832" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FETULL~1\\AppData\\Local\\Temp\\rust_mozprofile5gPJt7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1746558481799	Marionette	INFO	Marionette enabled
+1746558481934	Marionette	INFO	Listening on port 50841
+WebDriver BiDi listening on ws://127.0.0.1:50832
+Read port: 50841
+1746558482066	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50832/devtools/browser/ac697e68-2d24-48bb-843d-df950eaf781f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+console.warn: FormAutofillSection: isRecordCreatable: Country not supported: NL
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC, line 176: Script terminated by timeout at:
+Ea.prototype.get@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:26
+Ea.prototype.get@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:99
+Ea.prototype.get@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:99
+Ea.prototype.get@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:99
+Ea.prototype.get@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:99
+La@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:796
+ed.prototype.evaluate@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:212:72
+Rd/<@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:234:316
+k.invoke@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:210:361
+La@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:927
+ed.prototype.evaluate@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:212:72
+Ad@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:227:117
+k.invoke@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:210:361
+La@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:927
+Ka@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:683
+xd@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:226:319
+k.invoke@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:210:361
+La@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:927
+Ka@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:683
+Hd@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:228:301
+Nd@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:232:137
+Od@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:231:97
+k.invoke@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:210:361
+La@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:927
+Ka@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:683
+xd@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:226:319
+k.invoke@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:210:361
+La@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:927
+Ka@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:683
+Zd@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:237:279
+k.invoke@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:210:361
+La@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:927
+Ka@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:176:683
+Rd/<@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:234:468
+k.invoke@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:210:361
+oO/<@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:817:792
+Ev@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:531:268
+k.vp@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:796:195
+k.up/</<@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:793:486
+Lm@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:386:151
+Eo@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:402:70
+k.up/<@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:793:472
+c@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:571:22
+cy@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:571:349
+k.up@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:793:458
+c@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:808:868
+w@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:419:370
+Um@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:388:513
+hq@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:419:452
+gq.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:422:399
+gq.prototype.push@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:420:493
+$p@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:416:540
+BN/<@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:809:175
+k.Dn/<@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:744:126
+k.Dn/c/<@https://www.googletagmanager.com/gtag/js?id=G-0BJFXRKTYC:743:418
+invokeTask@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:7682
+runTask@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:3050
+invokeTask@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:8736
+x@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:21270
+j@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:21677
+J@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:21840
+
+1746558562066	Marionette	INFO	Stopped listening on port 50841
+Dynamically enable window occlusion 1

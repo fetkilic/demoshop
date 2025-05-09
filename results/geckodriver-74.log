@@ -1,0 +1,20 @@
+1746700805935	geckodriver	INFO	Listening on 127.0.0.1:55009
+1746700809046	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55010" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FETULL~1\\AppData\\Local\\Temp\\rust_mozprofilehp7dQ1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1746700809365	Marionette	INFO	Marionette enabled
+1746700809513	Marionette	INFO	Listening on port 55019
+WebDriver BiDi listening on ws://127.0.0.1:55010
+Read port: 55019
+1746700809657	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55010/devtools/browser/7cbdc313-0bc3-4fbf-b1df-d0be16e1f337
+1746700830391	Marionette	INFO	Stopped listening on port 55019
+Dynamically enable window occlusion 1
+JavaScript warning: https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js, line 1: Script terminated by timeout at:
+get zone@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:8784
+invokeTask@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:8729
+x@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:21270
+j@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:21573
+J@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:21840
+

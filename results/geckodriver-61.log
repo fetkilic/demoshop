@@ -1,0 +1,24 @@
+1746203469898	geckodriver	INFO	Listening on 127.0.0.1:64978
+1746203472943	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64979" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FETULL~1\\AppData\\Local\\Temp\\rust_mozprofileU8PwY1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1746203473215	Marionette	INFO	Marionette enabled
+1746203473345	Marionette	INFO	Listening on port 64988
+WebDriver BiDi listening on ws://127.0.0.1:64979
+Read port: 64988
+1746203473463	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64979/devtools/browser/0c1dde77-bd25-4aa6-96bc-2981f9ad4ee0
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+console.warn: FormAutofillSection: isRecordCreatable: Country not supported: NL
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+1746203608670	Marionette	INFO	Stopped listening on port 64988
+Dynamically enable window occlusion 1
+JavaScript warning: https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js, line 1: Script terminated by timeout at:
+J@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:21829
+

@@ -1,0 +1,77 @@
+1746007878933	geckodriver	INFO	Listening on 127.0.0.1:61548
+1746007882144	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61549" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FETULL~1\\AppData\\Local\\Temp\\rust_mozprofilexxzK0K"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1746007882717	Marionette	INFO	Marionette enabled
+1746007882881	Marionette	INFO	Listening on port 61559
+WebDriver BiDi listening on ws://127.0.0.1:61549
+Read port: 61559
+1746007883079	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61549/devtools/browser/c3907dd1-060e-452a-8a15-b957524f3d04
+1746007894931	Marionette	INFO	Stopped listening on port 61559
+Dynamically enable window occlusion 1
+JavaScript warning: https://practicesoftwaretesting.com/main.af675ad9d31fd243.js, line 1: Script terminated by timeout at:
+as@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:295624
+Ka@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:295845
+ef@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:294953
+template@https://practicesoftwaretesting.com/src_app_checkout_checkout_module_ts.b6580c5bbe802309.js:1:13470
+x5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:237671
+km@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:245097
+Cc@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246828
+G5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246655
+$5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246619
+W5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246965
+km@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:245771
+Cc@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246828
+G5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246655
+V5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246589
+km@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:245402
+Cc@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246828
+G5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246655
+$5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246619
+W5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246965
+km@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:245771
+Cc@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246828
+G5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246655
+V5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246589
+km@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:245402
+Cc@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246828
+G5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246655
+$5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246619
+W5@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246965
+km@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:245771
+Cc@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:246828
+Rm@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:247992
+di@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:248064
+detectChanges@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:248145
+tick@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:302986
+9212/initialize/next/<@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:304373
+invoke@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:7064
+onInvoke@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:251608
+invoke@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:7004
+run@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:2427
+run@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:252229
+next@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:304344
+next@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:104501
+_next@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:104168
+next@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:103852
+8645/next/<@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:101702
+l2@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:121329
+next@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:101539
+emit@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:249291
+hi@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:252603
+e7@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:253023
+onInvoke@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:251674
+invoke@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:7004
+run@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:2427
+run@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:252229
+runInsideAngular@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:502704
+2425/outsideInterval/</this.intervalId<@https://practicesoftwaretesting.com/main.af675ad9d31fd243.js:1:502595
+8332/te/a</</H[0]@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:28640
+invokeTask@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:7682
+runTask@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:3050
+invokeTask@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:8736
+8332/b/this.invoke<@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:8637
+8332/te/g/b.args[0]@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:28352
+

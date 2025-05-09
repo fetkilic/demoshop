@@ -1,0 +1,17 @@
+1746169388510	geckodriver	INFO	Listening on 127.0.0.1:51443
+1746169391545	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51444" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FETULL~1\\AppData\\Local\\Temp\\rust_mozprofile31u5IA"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1746169391816	Marionette	INFO	Marionette enabled
+1746169391935	Marionette	INFO	Listening on port 51453
+WebDriver BiDi listening on ws://127.0.0.1:51444
+Read port: 51453
+1746169392056	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51444/devtools/browser/eb701bda-106b-42f7-874f-3b8a1bdfc85a
+1746169405760	Marionette	INFO	Stopped listening on port 51453
+Dynamically enable window occlusion 1
+JavaScript warning: https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js, line 1: Script terminated by timeout at:
+J@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:21829
+
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1296: Error: Sqlite.sys.mjs has been shutdown. Cannot open connection to: C:\Users\FETULL~1\AppData\Local\Temp\rust_mozprofile31u5IA\protections.sqlite
