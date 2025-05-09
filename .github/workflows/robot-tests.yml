@@ -1,0 +1,27 @@
+name: Run Robot Framework Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Haal de code op
+        uses: actions/checkout@v3
+
+      - name: 🐍 Installeer Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 📦 Installeer Robot Framework
+        run: |
+          pip install robotframework
+
+      - name: ▶️ Voer Robot Framework tests uit
+        run: |
+          robot tests/
