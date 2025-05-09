@@ -27,4 +27,4 @@ jobs:
 
     - name: Run Robot Framework Tests
       run: |
-        robot tests/homepage_test.robot
+        robot tests/home_page_test.robot
