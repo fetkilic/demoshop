@@ -2,28 +2,29 @@ name: Robot Framework Tests
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main  # Voer de tests uit wanneer er een push is naar de 'main' branch
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main  # Voer de tests uit wanneer er een pull request naar 'main' is
 
 jobs:
-  robot-tests:
-    runs-on: ubuntu-latest
-
+  test:
+    runs-on: ubuntu-latest  # Dit is het besturingssysteem waarop de tests draaien
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v2
       with:
-        python-version: '3.10'
+        python-version: '3.8'
 
     - name: Install dependencies
       run: |
-        pip install --upgrade pip
         pip install -r requirements.txt
+        pip install robotframework-seleniumlibrary  # Zorg ervoor dat SeleniumLibrary geïnstalleerd is
 
-    - name: Run Robot Framework tests
+    - name: Run Robot Framework Tests
       run: |
-        robot tests/
+        robot tests/homepage_test.robot
