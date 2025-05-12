@@ -1,1058 +1,1060 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-09T12:37:11.356020" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-09T15:18:54.559493" rpa="false" schemaversion="5">
 <suite id="s1" name="Home Page Test" source="C:\Ontwikkeling\robot-scripts\toolshop-demo\tests\home_page_test.robot">
 <kw name="Open chrome en ga naar toolshopdemo" owner="common_keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:11.828904" level="INFO">Opening browser 'firefox' to base url 'https://practicesoftwaretesting.com/'.</msg>
+<msg time="2025-05-09T15:18:55.114545" level="INFO">Opening browser 'firefox' to base url 'https://practicesoftwaretesting.com/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-09T12:37:11.828723" elapsed="12.192348"/>
+<status status="PASS" start="2025-05-09T15:18:55.114073" elapsed="12.245384"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-09T12:37:24.021273" elapsed="0.276987"/>
+<status status="PASS" start="2025-05-09T15:19:07.359664" elapsed="0.276317"/>
 </kw>
-<status status="PASS" start="2025-05-09T12:37:11.827589" elapsed="12.470884"/>
+<status status="PASS" start="2025-05-09T15:18:55.113492" elapsed="12.522700"/>
 </kw>
 <test id="s1-t1" name="TC001: Verifieer homepage titel en klik vervolgens op menu-item Home" line="12">
 <kw name="Controleer homepage titel" owner="common_keywords">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:24.302854" level="INFO">Page title is 'Practice Software Testing - Toolshop - v5.0'.</msg>
+<msg time="2025-05-09T15:19:07.640821" level="INFO">Page title is 'Practice Software Testing - Toolshop - v5.0'.</msg>
 <arg>Practice Software Testing - Toolshop - v5.0</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-05-09T12:37:24.300435" elapsed="0.002500"/>
+<status status="PASS" start="2025-05-09T15:19:07.637733" elapsed="0.003202"/>
 </kw>
-<status status="PASS" start="2025-05-09T12:37:24.300043" elapsed="0.002964"/>
+<status status="PASS" start="2025-05-09T15:19:07.637365" elapsed="0.003667"/>
 </kw>
 <doc>Deze testcase verifieert of de homepage titel correct is en klikt daarna op het menu-item "Home".</doc>
 <tag>homepage</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:24.298627" elapsed="0.004785"/>
+<status status="PASS" start="2025-05-09T15:19:07.636346" elapsed="0.005061"/>
 </test>
 <test id="s1-t2" name="TC002: Verifieer dat de logo op de website wordt getoond." line="17">
 <kw name="Controleer dat de logo bestaat" owner="common_keywords">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:24.377899" level="INFO">Element '//*[@id="Layer_1"]' is displayed.</msg>
+<msg time="2025-05-09T15:19:07.722998" level="INFO">Element '//*[@id="Layer_1"]' is displayed.</msg>
 <arg>${logo}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:24.305105" elapsed="0.072961"/>
+<status status="PASS" start="2025-05-09T15:19:07.643178" elapsed="0.079953"/>
 </kw>
 <tag>homepage</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
 <doc>Deze testcase controleert of de logo zichtbaar is.</doc>
-<status status="PASS" start="2025-05-09T12:37:24.304938" elapsed="0.073347"/>
+<status status="PASS" start="2025-05-09T15:19:07.642895" elapsed="0.080355"/>
 </kw>
 <doc>Deze testcase controleert of de logo zichtbaar is.</doc>
 <tag>homepage</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:24.304312" elapsed="0.074260"/>
+<status status="PASS" start="2025-05-09T15:19:07.642224" elapsed="0.081380"/>
 </test>
 <test id="s1-t3" name="TC003: Verifieer dat alle menu-items bestaan" line="22">
 <kw name="Klik op de menu-item Home" owner="common_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:24.380490" level="INFO">Clicking element '//a[text()='Home']'.</msg>
+<msg time="2025-05-09T15:19:07.725193" level="INFO">Clicking element '//a[text()='Home']'.</msg>
 <arg>${Home}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:24.380355" elapsed="0.428491"/>
+<status status="PASS" start="2025-05-09T15:19:07.725005" elapsed="0.166438"/>
 </kw>
-<status status="PASS" start="2025-05-09T12:37:24.380176" elapsed="0.428767"/>
+<status status="PASS" start="2025-05-09T15:19:07.724703" elapsed="0.166884"/>
 </kw>
 <kw name="Controleer zichtbaarheid menu-items" owner="common_keywords">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:24.843412" level="INFO">Element '//a[text()='Home']' is displayed.</msg>
+<msg time="2025-05-09T15:19:07.918199" level="INFO">Element '//a[text()='Home']' is displayed.</msg>
 <arg>${Home}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:24.809479" elapsed="0.034023"/>
+<status status="PASS" start="2025-05-09T15:19:07.892470" elapsed="0.025819"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:24.853094" level="INFO">Element '//a[@data-test='nav-categories']' is displayed.</msg>
+<msg time="2025-05-09T15:19:07.924614" level="INFO">Element '//a[@data-test='nav-categories']' is displayed.</msg>
 <arg>${Categories}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:24.843642" elapsed="0.009551"/>
+<status status="PASS" start="2025-05-09T15:19:07.918426" elapsed="0.006272"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:24.862858" level="INFO">Element '//a[text()='Contact']' is displayed.</msg>
+<msg time="2025-05-09T15:19:07.930725" level="INFO">Element '//a[text()='Contact']' is displayed.</msg>
 <arg>${Contact}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:24.853339" elapsed="0.009696"/>
+<status status="PASS" start="2025-05-09T15:19:07.924832" elapsed="0.005976"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:24.877460" level="INFO">Element '//a[text()='Sign in']' is displayed.</msg>
+<msg time="2025-05-09T15:19:07.945044" level="INFO">Element '//a[text()='Sign in']' is displayed.</msg>
 <arg>${SignIn}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:24.863318" elapsed="0.014234"/>
+<status status="PASS" start="2025-05-09T15:19:07.930944" elapsed="0.014193"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:24.877864" level="INFO">Clicking element '//a[@data-test='nav-categories']'.</msg>
+<msg time="2025-05-09T15:19:07.945461" level="INFO">Clicking element '//a[@data-test='nav-categories']'.</msg>
 <arg>${Categories}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:24.877690" elapsed="0.212944"/>
+<status status="PASS" start="2025-05-09T15:19:07.945274" elapsed="0.212739"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:25.101432" level="INFO">Element '//a[text()='Hand Tools']' is displayed.</msg>
+<msg time="2025-05-09T15:19:08.170766" level="INFO">Element '//a[text()='Hand Tools']' is displayed.</msg>
 <arg>${HandTools}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:25.090862" elapsed="0.010664"/>
+<status status="PASS" start="2025-05-09T15:19:08.158251" elapsed="0.012604"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:25.108642" level="INFO">Element '//a[text()='Power Tools']' is displayed.</msg>
+<msg time="2025-05-09T15:19:08.180510" level="INFO">Element '//a[text()='Power Tools']' is displayed.</msg>
 <arg>${PowerTools}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:25.101679" elapsed="0.007047"/>
+<status status="PASS" start="2025-05-09T15:19:08.170993" elapsed="0.009732"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:25.116320" level="INFO">Element '//a[text()='Other']' is displayed.</msg>
+<msg time="2025-05-09T15:19:08.190171" level="INFO">Element '//a[text()='Other']' is displayed.</msg>
 <arg>${Other}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:25.108863" elapsed="0.007544"/>
+<status status="PASS" start="2025-05-09T15:19:08.180896" elapsed="0.009364"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:25.124131" level="INFO">Element '//a[text()='Special Tools']' is displayed.</msg>
+<msg time="2025-05-09T15:19:08.202259" level="INFO">Element '//a[text()='Special Tools']' is displayed.</msg>
 <arg>${SpecialTools}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:25.116541" elapsed="0.007669"/>
+<status status="PASS" start="2025-05-09T15:19:08.190398" elapsed="0.011951"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:25.134412" level="INFO">Element '//a[text()='Rentals']' is displayed.</msg>
+<msg time="2025-05-09T15:19:08.212676" level="INFO">Element '//a[text()='Rentals']' is displayed.</msg>
 <arg>${Rentals}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:25.124340" elapsed="0.010160"/>
+<status status="PASS" start="2025-05-09T15:19:08.202489" elapsed="0.010320"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:25.134796" level="INFO">Clicking element '//a[text()='Hand Tools']'.</msg>
+<msg time="2025-05-09T15:19:08.213336" level="INFO">Clicking element '//a[text()='Hand Tools']'.</msg>
 <arg>${HandTools}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:25.134634" elapsed="0.226379"/>
+<status status="PASS" start="2025-05-09T15:19:08.213045" elapsed="0.253302"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:25.361706" level="INFO">Clicking element '//a[text()='Contact']'.</msg>
+<msg time="2025-05-09T15:19:08.466953" level="INFO">Clicking element '//a[text()='Contact']'.</msg>
 <arg>${Contact}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:25.361374" elapsed="0.224458"/>
+<status status="PASS" start="2025-05-09T15:19:08.466666" elapsed="0.213941"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:25.586188" level="INFO">Clicking element '//a[text()='Sign in']'.</msg>
+<msg time="2025-05-09T15:19:08.680931" level="INFO">Clicking element '//a[text()='Sign in']'.</msg>
 <arg>${SignIn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:25.586003" elapsed="0.223206"/>
+<status status="PASS" start="2025-05-09T15:19:08.680764" elapsed="0.231518"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:25.809580" level="INFO">Clicking element '//a[text()='Home']'.</msg>
+<msg time="2025-05-09T15:19:08.912645" level="INFO">Clicking element '//a[text()='Home']'.</msg>
 <arg>${Home}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:25.809389" elapsed="0.150424"/>
+<status status="PASS" start="2025-05-09T15:19:08.912441" elapsed="0.147194"/>
 </kw>
-<status status="PASS" start="2025-05-09T12:37:24.809275" elapsed="1.150781"/>
+<status status="PASS" start="2025-05-09T15:19:07.892143" elapsed="1.167890"/>
 </kw>
 <doc>Deze testcase controleert of de menu-items zichtbaar zijn.</doc>
 <tag>homepage</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:24.379407" elapsed="1.581096"/>
+<status status="PASS" start="2025-05-09T15:19:07.724140" elapsed="1.336210"/>
 </test>
 <test id="s1-t4" name="TC004: Verifieer dat footer bestaat en dat de juiste footertekst aanwezig is." line="28">
 <kw name="Controleer zichtbaarheid footer en footer tekst" owner="common_keywords">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:25.989494" level="INFO">Element '//app-footer' is displayed.</msg>
+<msg time="2025-05-09T15:19:09.085834" level="INFO">Element '//app-footer' is displayed.</msg>
 <arg>${footer}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:25.962497" elapsed="0.027085"/>
+<status status="PASS" start="2025-05-09T15:19:09.061499" elapsed="0.024419"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:25.989886" level="INFO">Verifying element '//app-footer//p' contains exact text 'This is a DEMO application (GitHub repo), used for software testing training purpose. | Support this project | Privacy Policy | Banner photo by Barn Images on Unsplash.'.</msg>
+<msg time="2025-05-09T15:19:09.086222" level="INFO">Verifying element '//app-footer//p' contains exact text 'This is a DEMO application (GitHub repo), used for software testing training purpose. | Support this project | Privacy Policy | Banner photo by Barn Images on Unsplash.'.</msg>
 <arg>${FooterText}</arg>
 <arg>This is a DEMO application (GitHub repo), used for software testing training purpose. | Support this project | Privacy Policy | Banner photo by Barn Images on Unsplash.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:25.989715" elapsed="0.012531"/>
+<status status="PASS" start="2025-05-09T15:19:09.086051" elapsed="0.007164"/>
 </kw>
-<status status="PASS" start="2025-05-09T12:37:25.962263" elapsed="0.040082"/>
+<status status="PASS" start="2025-05-09T15:19:09.061174" elapsed="0.032130"/>
 </kw>
 <doc>Deze testcase controleert of de footer zichtbaar is.</doc>
 <tag>footer</tag>
 <tag>homepage</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:25.961672" elapsed="0.040977"/>
+<status status="PASS" start="2025-05-09T15:19:09.060620" elapsed="0.032878"/>
 </test>
 <test id="s1-t5" name="TC005: Verifieer dat de linkjes in de footer correct zijn" line="33">
 <kw name="Check alle footer linkjes" owner="common_keywords">
 <kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.010779" level="INFO">${href} = https://github.com/testsmith-io/practice-software-testing</msg>
+<msg time="2025-05-09T15:19:09.103238" level="INFO">${href} = https://github.com/testsmith-io/practice-software-testing</msg>
 <var>${href}</var>
 <arg>${git_locator}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.004388" elapsed="0.006430"/>
+<status status="PASS" start="2025-05-09T15:19:09.094771" elapsed="0.008507"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${href}</arg>
 <arg>${footerURL1}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.010958" elapsed="0.000164"/>
+<status status="PASS" start="2025-05-09T15:19:09.103485" elapsed="0.000208"/>
 </kw>
 <kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.018200" level="INFO">${href} = https://testwithroy.com/b/support</msg>
+<msg time="2025-05-09T15:19:09.110535" level="INFO">${href} = https://testwithroy.com/b/support</msg>
 <var>${href}</var>
 <arg>${supp_locator}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.011194" elapsed="0.007046"/>
+<status status="PASS" start="2025-05-09T15:19:09.103770" elapsed="0.006801"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${href}</arg>
 <arg>${footerURL2}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.018380" elapsed="0.000151"/>
+<status status="PASS" start="2025-05-09T15:19:09.110743" elapsed="0.000150"/>
 </kw>
 <kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.024718" level="INFO">${href} = https://practicesoftwaretesting.com/privacy</msg>
+<msg time="2025-05-09T15:19:09.117255" level="INFO">${href} = https://practicesoftwaretesting.com/privacy</msg>
 <var>${href}</var>
 <arg>${privacy_locator}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.018599" elapsed="0.006188"/>
+<status status="PASS" start="2025-05-09T15:19:09.110964" elapsed="0.006327"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${href}</arg>
 <arg>${footerURL3}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.025041" elapsed="0.000262"/>
+<status status="PASS" start="2025-05-09T15:19:09.117424" elapsed="0.000140"/>
 </kw>
 <kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.036631" level="INFO">${href} = https://unsplash.com/@barnimages</msg>
+<msg time="2025-05-09T15:19:09.122154" level="INFO">${href} = https://unsplash.com/@barnimages</msg>
 <var>${href}</var>
 <arg>${barn_locator}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.025415" elapsed="0.011256"/>
+<status status="PASS" start="2025-05-09T15:19:09.117633" elapsed="0.004555"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${href}</arg>
 <arg>${footerURL4}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.036873" elapsed="0.000265"/>
+<status status="PASS" start="2025-05-09T15:19:09.122311" elapsed="0.000190"/>
 </kw>
 <kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.046711" level="INFO">${href} = https://unsplash.com/photos/t5YUoHW6zRo</msg>
+<msg time="2025-05-09T15:19:09.127667" level="INFO">${href} = https://unsplash.com/photos/t5YUoHW6zRo</msg>
 <var>${href}</var>
 <arg>${unsplash_locator}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.037299" elapsed="0.009475"/>
+<status status="PASS" start="2025-05-09T15:19:09.122580" elapsed="0.005120"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${href}</arg>
 <arg>${footerURL5}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.047005" elapsed="0.000286"/>
+<status status="PASS" start="2025-05-09T15:19:09.127816" elapsed="0.000174"/>
 </kw>
 <tag>footer</tag>
 <tag>homepage</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
 <doc>Deze testcase controleert of de linkjes in de footer werken.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.004022" elapsed="0.043344"/>
+<status status="PASS" start="2025-05-09T15:19:09.094608" elapsed="0.033442"/>
 </kw>
 <doc>Deze testcase controleert of de linkjes in de footer werken.</doc>
 <tag>footer</tag>
 <tag>homepage</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:26.003360" elapsed="0.044300"/>
+<status status="PASS" start="2025-05-09T15:19:09.094064" elapsed="0.034385"/>
 </test>
 <test id="s1-t6" name="TC006: Verifieer dat de zoekbalk en de daarbij horende onderdelen bestaan" line="39">
 <kw name="Verifieer dat de zoekbalk bestaat" owner="home_page">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.068188" level="INFO">Element '//input[@id='search-query']' is displayed.</msg>
+<msg time="2025-05-09T15:19:09.140994" level="INFO">Element '//input[@id='search-query']' is displayed.</msg>
 <arg>${searchbar}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.049531" elapsed="0.018744"/>
+<status status="PASS" start="2025-05-09T15:19:09.130013" elapsed="0.011071"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.077498" level="INFO">Element '//button[@data-test='search-reset']' is displayed.</msg>
+<msg time="2025-05-09T15:19:09.151094" level="INFO">Element '//button[@data-test='search-reset']' is displayed.</msg>
 <arg>${deleteTextButton}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.068412" elapsed="0.009170"/>
+<status status="PASS" start="2025-05-09T15:19:09.141245" elapsed="0.009932"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.093116" level="INFO">Element '//button[text()='Search']' is displayed.</msg>
+<msg time="2025-05-09T15:19:09.157395" level="INFO">Element '//button[text()='Search']' is displayed.</msg>
 <arg>${searchButton}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.077770" elapsed="0.015434"/>
+<status status="PASS" start="2025-05-09T15:19:09.151311" elapsed="0.006162"/>
 </kw>
 <tag>homepage</tag>
 <tag>search</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
 <doc>Deze testcase controleert of de zoekbalk zichtbaar is.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.049271" elapsed="0.044130"/>
+<status status="PASS" start="2025-05-09T15:19:09.129872" elapsed="0.027669"/>
 </kw>
 <doc>Deze testcase controleert of de zoekbalk zichtbaar is.</doc>
 <tag>homepage</tag>
 <tag>search</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:26.048579" elapsed="0.045175"/>
+<status status="PASS" start="2025-05-09T15:19:09.129471" elapsed="0.028274"/>
 </test>
 <test id="s1-t7" name="TC007: Verifieert dat de zoekfunctionaliteit werkt" line="43">
 <kw name="Zoek naar product" owner="home_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.096891" level="INFO">Typing text 'Computer' into text field '//input[@id='search-query']'.</msg>
+<msg time="2025-05-09T15:19:09.159348" level="INFO">Typing text 'Computer' into text field '//input[@id='search-query']'.</msg>
 <arg>${searchbar}</arg>
 <arg>${zoekterm}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.096633" elapsed="0.097306"/>
+<status status="PASS" start="2025-05-09T15:19:09.159221" elapsed="0.031889"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.194320" level="INFO">Clicking element '//button[text()='Search']'.</msg>
+<msg time="2025-05-09T15:19:09.191455" level="INFO">Clicking element '//button[text()='Search']'.</msg>
 <arg>${searchButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.194094" elapsed="0.223178"/>
+<status status="PASS" start="2025-05-09T15:19:09.191281" elapsed="0.230186"/>
 </kw>
 <arg>Computer</arg>
-<status status="PASS" start="2025-05-09T12:37:26.096270" elapsed="0.321297"/>
+<status status="PASS" start="2025-05-09T15:19:09.159043" elapsed="0.262671"/>
 </kw>
 <kw name="Verwijder zoekterm" owner="home_page">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.418542" level="INFO">Clicking element '//button[@data-test='search-reset']'.</msg>
+<msg time="2025-05-09T15:19:09.422913" level="INFO">Clicking element '//button[@data-test='search-reset']'.</msg>
 <arg>${deleteTextButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.418362" elapsed="0.214040"/>
+<status status="PASS" start="2025-05-09T15:19:09.422753" elapsed="0.217811"/>
 </kw>
-<status status="PASS" start="2025-05-09T12:37:26.418061" elapsed="0.214480"/>
+<status status="PASS" start="2025-05-09T15:19:09.422483" elapsed="0.218185"/>
 </kw>
 <kw name="Zoek naar product" owner="home_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.633492" level="INFO">Typing text 'Com' into text field '//input[@id='search-query']'.</msg>
+<msg time="2025-05-09T15:19:09.641597" level="INFO">Typing text 'Com' into text field '//input[@id='search-query']'.</msg>
 <arg>${searchbar}</arg>
 <arg>${zoekterm}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.633332" elapsed="0.027426"/>
+<status status="PASS" start="2025-05-09T15:19:09.641454" elapsed="0.013037"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.661093" level="INFO">Clicking element '//button[text()='Search']'.</msg>
+<msg time="2025-05-09T15:19:09.654826" level="INFO">Clicking element '//button[text()='Search']'.</msg>
 <arg>${searchButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.660916" elapsed="0.218608"/>
+<status status="PASS" start="2025-05-09T15:19:09.654646" elapsed="0.241689"/>
 </kw>
 <arg>Com</arg>
-<status status="PASS" start="2025-05-09T12:37:26.633020" elapsed="0.246670"/>
+<status status="PASS" start="2025-05-09T15:19:09.641226" elapsed="0.255284"/>
 </kw>
 <kw name="Controleer zoekresultaat" owner="home_page">
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.890451" level="INFO">Element '//h3[contains(text(), 'Searched for:')]' contains text 'Searched for: Com'.</msg>
+<msg time="2025-05-09T15:19:09.909892" level="INFO">Element '//h3[contains(text(), 'Searched for:')]' contains text 'Searched for: Com'.</msg>
 <arg>${searchResult}</arg>
 <arg>Searched for: ${zoekterm}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.880634" elapsed="0.009901"/>
+<status status="PASS" start="2025-05-09T15:19:09.897447" elapsed="0.012536"/>
 </kw>
 <arg>Com</arg>
-<status status="PASS" start="2025-05-09T12:37:26.880279" elapsed="0.010328"/>
+<status status="PASS" start="2025-05-09T15:19:09.897122" elapsed="0.012934"/>
 </kw>
 <kw name="Controleer productdetails" owner="home_page">
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.900651" level="INFO">Element '//h5[contains(text(), 'Combination Pliers')]' contains text 'Combination Pliers'.</msg>
+<msg time="2025-05-09T15:19:09.976454" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-09T15:19:09.976622" level="FAIL">Element with locator '//h5[contains(text(), 'Combination Pliers')]' not found.</msg>
 <arg>${Product1}</arg>
 <arg>Combination Pliers</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.891293" elapsed="0.009442"/>
+<status status="FAIL" start="2025-05-09T15:19:09.910762" elapsed="0.135306">Element with locator '//h5[contains(text(), 'Combination Pliers')]' not found.</status>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.908839" level="INFO">Element '//span[contains(text(), '$14.15')]' contains text '$14.15'.</msg>
 <arg>${PriceProduct1}</arg>
 <arg>$14.15</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.900867" elapsed="0.008061"/>
+<status status="NOT RUN" start="2025-05-09T15:19:10.046234" elapsed="0.000028"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.919876" level="INFO">Element '//img[@alt='Combination Pliers']' is displayed.</msg>
 <arg>${AltTextProduct1}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.909065" elapsed="0.010891"/>
+<status status="NOT RUN" start="2025-05-09T15:19:10.046319" elapsed="0.000014"/>
 </kw>
-<status status="PASS" start="2025-05-09T12:37:26.891105" elapsed="0.028921"/>
+<status status="FAIL" start="2025-05-09T15:19:09.910547" elapsed="0.135869">Element with locator '//h5[contains(text(), 'Combination Pliers')]' not found.</status>
 </kw>
 <doc>Test invoeren, wissen en zoeken.</doc>
 <tag>homepage</tag>
 <tag>search</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:26.095610" elapsed="0.824881"/>
+<status status="FAIL" start="2025-05-09T15:19:09.158470" elapsed="0.888310">Element with locator '//h5[contains(text(), 'Combination Pliers')]' not found.</status>
 </test>
 <test id="s1-t8" name="TC008: Verifieert dat de zoekfunctie geen resultaat geeft bij ongeldige data" line="52">
 <kw name="Verifieer dat geen resultaten worden gevonden bij ongeldige zoekterm" owner="home_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.922478" level="INFO">Typing text 'aaa' into text field '//input[@id='search-query']'.</msg>
+<msg time="2025-05-09T15:19:10.049154" level="INFO">Typing text 'aaa' into text field '//input[@id='search-query']'.</msg>
 <arg>${searchbar}</arg>
 <arg>${zoekterm}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.922357" elapsed="0.013682"/>
+<status status="PASS" start="2025-05-09T15:19:10.049026" elapsed="0.011997"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:26.936407" level="INFO">Clicking element '//button[text()='Search']'.</msg>
+<msg time="2025-05-09T15:19:10.061392" level="INFO">Clicking element '//button[text()='Search']'.</msg>
 <arg>${searchButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.936237" elapsed="0.215835"/>
+<status status="PASS" start="2025-05-09T15:19:10.061183" elapsed="0.219234"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-09T12:37:30.154581" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-05-09T15:19:13.284616" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-09T12:37:27.152415" elapsed="3.002375"/>
+<status status="PASS" start="2025-05-09T15:19:10.280586" elapsed="3.004180"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:30.169180" level="INFO">Element '//div[@data-test='no-results']' contains text 'There are no products found.'.</msg>
+<msg time="2025-05-09T15:19:13.396100" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-09T15:19:13.396223" level="FAIL">Element with locator '//div[@data-test='no-results']' not found.</msg>
 <arg>${noProductsFound}</arg>
 <arg>There are no products found.</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:30.155110" elapsed="0.014176"/>
+<status status="FAIL" start="2025-05-09T15:19:13.284988" elapsed="0.112677">Element with locator '//div[@data-test='no-results']' not found.</status>
 </kw>
 <arg>aaa</arg>
 <doc>Voert een zoekterm in en controleert dat er geen producten worden gevonden.</doc>
-<status status="PASS" start="2025-05-09T12:37:26.922185" elapsed="3.247198"/>
+<status status="FAIL" start="2025-05-09T15:19:10.048874" elapsed="3.348913">Element with locator '//div[@data-test='no-results']' not found.</status>
 </kw>
 <doc>Deze testcase controleert of bij een ongeldige zoekterm het juiste bericht wordt getoond.</doc>
 <tag>search</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:26.921693" elapsed="3.248237"/>
+<status status="FAIL" start="2025-05-09T15:19:10.048111" elapsed="3.350338">Element with locator '//div[@data-test='no-results']' not found.</status>
 </test>
 <test id="s1-t9" name="TC009: Verifieer dat Duitse taalinstelling correct werkt" line="57">
 <kw name="Verifieer Duitse taalinstelling" owner="common_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:30.172276" level="INFO">Clicking element '//button[contains(text(), 'EN')]'.</msg>
+<msg time="2025-05-09T15:19:13.402663" level="INFO">Clicking element '//button[contains(text(), 'EN')]'.</msg>
 <arg>${EnWorld}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:30.172164" elapsed="0.216308"/>
+<status status="PASS" start="2025-05-09T15:19:13.402515" elapsed="0.213034"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:30.389082" level="INFO">Clicking element '//a[contains(text(), 'DE')]'.</msg>
+<msg time="2025-05-09T15:19:13.615999" level="INFO">Clicking element '//a[contains(text(), 'DE')]'.</msg>
 <arg>${DE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:30.388760" elapsed="0.216675"/>
+<status status="PASS" start="2025-05-09T15:19:13.615777" elapsed="0.213332"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-09T12:37:31.606233" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-09T15:19:14.829978" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-09T12:37:30.605587" elapsed="1.000762"/>
+<status status="PASS" start="2025-05-09T15:19:13.829354" elapsed="1.000850"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:31.606706" level="INFO">Verifying element '//a[contains(text(), 'Einloggen')]' contains exact text 'Einloggen'.</msg>
+<msg time="2025-05-09T15:19:14.831102" level="INFO">Verifying element '//a[contains(text(), 'Einloggen')]' contains exact text 'Einloggen'.</msg>
 <arg>${inloggenDE}</arg>
 <arg>Einloggen</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:31.606514" elapsed="0.011126"/>
+<status status="PASS" start="2025-05-09T15:19:14.830597" elapsed="0.010721"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:31.617942" level="INFO">Verifying element '//h4[contains(., 'Sortieren')]' contains exact text 'Sortieren'.</msg>
+<msg time="2025-05-09T15:19:14.841651" level="INFO">Verifying element '//h4[contains(., 'Sortieren')]' contains exact text 'Sortieren'.</msg>
 <arg>${SorterenDE}</arg>
 <arg>Sortieren</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:31.617781" elapsed="0.008060"/>
+<status status="PASS" start="2025-05-09T15:19:14.841472" elapsed="0.008925"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:31.626138" level="INFO">Verifying element '//h4[contains(., 'Preisspanne')]' contains exact text 'Preisspanne'.</msg>
+<msg time="2025-05-09T15:19:14.850755" level="INFO">Verifying element '//h4[contains(., 'Preisspanne')]' contains exact text 'Preisspanne'.</msg>
 <arg>${PrijsKlasseDE}</arg>
 <arg>Preisspanne</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:31.625982" elapsed="0.013536"/>
+<status status="PASS" start="2025-05-09T15:19:14.850589" elapsed="0.008592"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:31.639841" level="INFO">Verifying element '//h4[contains(., 'Suche')]' contains exact text 'Suche'.</msg>
+<msg time="2025-05-09T15:19:14.859555" level="INFO">Verifying element '//h4[contains(., 'Suche')]' contains exact text 'Suche'.</msg>
 <arg>${ZoekenDE}</arg>
 <arg>Suche</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:31.639667" elapsed="0.046479"/>
+<status status="PASS" start="2025-05-09T15:19:14.859337" elapsed="0.011593"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:31.686480" level="INFO">Verifying element '//h4[contains(., 'Nach Kategorie:')]' contains exact text 'Nach Kategorie:'.</msg>
+<msg time="2025-05-09T15:19:14.871277" level="INFO">Verifying element '//h4[contains(., 'Nach Kategorie:')]' contains exact text 'Nach Kategorie:'.</msg>
 <arg>${OpCategorieDE}</arg>
 <arg>Nach Kategorie:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:31.686302" elapsed="0.008498"/>
+<status status="PASS" start="2025-05-09T15:19:14.871102" elapsed="0.010472"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:31.695585" level="INFO">Verifying element '//h4[contains(., 'Nach Marken:')]' contains exact text 'Nach Marken:'.</msg>
+<msg time="2025-05-09T15:19:14.881895" level="INFO">Verifying element '//h4[contains(., 'Nach Marken:')]' contains exact text 'Nach Marken:'.</msg>
 <arg>${OpMerkDE}</arg>
 <arg>Nach Marken:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:31.695366" elapsed="0.008179"/>
+<status status="PASS" start="2025-05-09T15:19:14.881723" elapsed="0.007146"/>
 </kw>
 <tag>homepage</tag>
 <tag>language</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
 <doc>Deze testcase controleert of de Duitse taalinstelling zichtbaar is.</doc>
-<status status="PASS" start="2025-05-09T12:37:30.172010" elapsed="1.531619"/>
+<status status="PASS" start="2025-05-09T15:19:13.402064" elapsed="1.486885"/>
 </kw>
 <doc>Deze testcase controleert of de Duitse taalinstelling correct werkt.</doc>
 <tag>homepage</tag>
 <tag>language</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:30.171419" elapsed="1.532847"/>
+<status status="PASS" start="2025-05-09T15:19:13.400679" elapsed="1.488795"/>
 </test>
 <test id="s1-t10" name="TC010: Verifieer dat Spaanse taalinstelling correct werkt" line="62">
 <kw name="Verifieer Spaanse taalinstelling" owner="common_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:31.706444" level="INFO">Clicking element '//button[contains(text(), 'DE')]'.</msg>
+<msg time="2025-05-09T15:19:14.892048" level="INFO">Clicking element '//button[contains(text(), 'DE')]'.</msg>
 <arg>${DeWorld}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:31.706332" elapsed="0.212366"/>
+<status status="PASS" start="2025-05-09T15:19:14.891934" elapsed="0.216090"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:31.919196" level="INFO">Clicking element '//a[contains(text(), 'ES')]'.</msg>
+<msg time="2025-05-09T15:19:15.108456" level="INFO">Clicking element '//a[contains(text(), 'ES')]'.</msg>
 <arg>${ES}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:31.918936" elapsed="0.233014"/>
+<status status="PASS" start="2025-05-09T15:19:15.108236" elapsed="0.219953"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-09T12:37:33.152707" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-09T15:19:16.328983" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-09T12:37:32.152153" elapsed="1.000822"/>
+<status status="PASS" start="2025-05-09T15:19:15.328422" elapsed="1.000812"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:33.153994" level="INFO">Verifying element '//a[contains(text(), 'Iniciar sesión')]' contains exact text 'Iniciar sesión'.</msg>
+<msg time="2025-05-09T15:19:16.330184" level="INFO">Verifying element '//a[contains(text(), 'Iniciar sesión')]' contains exact text 'Iniciar sesión'.</msg>
 <arg>${inloggenSE}</arg>
 <arg>Iniciar sesión</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:33.153405" elapsed="0.014684"/>
+<status status="PASS" start="2025-05-09T15:19:16.329651" elapsed="0.014322"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:33.168508" level="INFO">Verifying element '//h4[contains(., 'Ordenar')]' contains exact text 'Ordenar'.</msg>
+<msg time="2025-05-09T15:19:16.344323" level="INFO">Verifying element '//h4[contains(., 'Ordenar')]' contains exact text 'Ordenar'.</msg>
 <arg>${SorterenSE}</arg>
 <arg>Ordenar</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:33.168287" elapsed="0.009188"/>
+<status status="PASS" start="2025-05-09T15:19:16.344144" elapsed="0.008369"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:33.177807" level="INFO">Verifying element '//h4[contains(., 'Rango de precios')]' contains exact text 'Rango de precios'.</msg>
+<msg time="2025-05-09T15:19:16.352814" level="INFO">Verifying element '//h4[contains(., 'Rango de precios')]' contains exact text 'Rango de precios'.</msg>
 <arg>${PrijsKlasseSE}</arg>
 <arg>Rango de precios</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:33.177631" elapsed="0.008054"/>
+<status status="PASS" start="2025-05-09T15:19:16.352657" elapsed="0.008014"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:33.185973" level="INFO">Verifying element '//h4[contains(., 'Buscar')]' contains exact text 'Buscar'.</msg>
+<msg time="2025-05-09T15:19:16.360979" level="INFO">Verifying element '//h4[contains(., 'Buscar')]' contains exact text 'Buscar'.</msg>
 <arg>${ZoekenSE}</arg>
 <arg>Buscar</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:33.185819" elapsed="0.009744"/>
+<status status="PASS" start="2025-05-09T15:19:16.360807" elapsed="0.011384"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:33.195961" level="INFO">Verifying element '//h4[contains(., 'Por categoría:')]' contains exact text 'Por categoría:'.</msg>
+<msg time="2025-05-09T15:19:16.372504" level="INFO">Verifying element '//h4[contains(., 'Por categoría:')]' contains exact text 'Por categoría:'.</msg>
 <arg>${OpCategorieSE}</arg>
 <arg>Por categoría:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:33.195754" elapsed="0.010556"/>
+<status status="PASS" start="2025-05-09T15:19:16.372339" elapsed="0.008194"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:33.206628" level="INFO">Verifying element '//h4[contains(., 'Por marca:')]' contains exact text 'Por marca:'.</msg>
+<msg time="2025-05-09T15:19:16.380831" level="INFO">Verifying element '//h4[contains(., 'Por marca:')]' contains exact text 'Por marca:'.</msg>
 <arg>${OpMerkSE}</arg>
 <arg>Por marca:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:33.206459" elapsed="0.007145"/>
+<status status="PASS" start="2025-05-09T15:19:16.380674" elapsed="0.007695"/>
 </kw>
 <tag>homepage</tag>
 <tag>language</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
 <doc>Deze testcase controleert of de Duitse taalinstelling zichtbaar is.</doc>
-<status status="PASS" start="2025-05-09T12:37:31.706180" elapsed="1.507653"/>
+<status status="PASS" start="2025-05-09T15:19:14.891769" elapsed="1.496684"/>
 </kw>
 <doc>Deze testcase controleert of de Spaanse taalinstelling correct werkt.</doc>
 <tag>homepage</tag>
 <tag>language</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:31.705646" elapsed="1.508813"/>
+<status status="PASS" start="2025-05-09T15:19:14.890718" elapsed="1.498361"/>
 </test>
 <test id="s1-t11" name="TC011: Verifieer dat Franse taalinstelling correct werkt" line="67">
 <kw name="Verifieer Franse taalinstelling" owner="common_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:33.217343" level="INFO">Clicking element '//button[contains(text(), 'ES')]'.</msg>
+<msg time="2025-05-09T15:19:16.391935" level="INFO">Clicking element '//button[contains(text(), 'ES')]'.</msg>
 <arg>${Esworld}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:33.217232" elapsed="0.211819"/>
+<status status="PASS" start="2025-05-09T15:19:16.391819" elapsed="0.215716"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:33.429620" level="INFO">Clicking element '//a[contains(text(), 'FR')]'.</msg>
+<msg time="2025-05-09T15:19:16.607843" level="INFO">Clicking element '//a[contains(text(), 'FR')]'.</msg>
 <arg>${FR}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:33.429323" elapsed="0.216080"/>
+<status status="PASS" start="2025-05-09T15:19:16.607681" elapsed="0.214829"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-09T12:37:34.646666" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-09T15:19:17.823438" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-09T12:37:33.645734" elapsed="1.001078"/>
+<status status="PASS" start="2025-05-09T15:19:16.822731" elapsed="1.000878"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:34.647274" level="INFO">Verifying element '//a[contains(text(), 'Se connecter')]' contains exact text 'Se connecter'.</msg>
+<msg time="2025-05-09T15:19:17.824253" level="INFO">Verifying element '//a[contains(text(), 'Se connecter')]' contains exact text 'Se connecter'.</msg>
 <arg>${inloggenFR}</arg>
 <arg>Se connecter</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:34.647019" elapsed="0.011660"/>
+<status status="PASS" start="2025-05-09T15:19:17.823886" elapsed="0.012209"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:34.659210" level="INFO">Verifying element '//h4[contains(., 'Trier')]' contains exact text 'Trier'.</msg>
+<msg time="2025-05-09T15:19:17.836433" level="INFO">Verifying element '//h4[contains(., 'Trier')]' contains exact text 'Trier'.</msg>
 <arg>${SorterenFR}</arg>
 <arg>Trier</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:34.658887" elapsed="0.009491"/>
+<status status="PASS" start="2025-05-09T15:19:17.836253" elapsed="0.007780"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:34.668706" level="INFO">Verifying element '//h4[contains(., 'Fourchette de prix')]' contains exact text 'Fourchette de prix'.</msg>
+<msg time="2025-05-09T15:19:17.844455" level="INFO">Verifying element '//h4[contains(., 'Fourchette de prix')]' contains exact text 'Fourchette de prix'.</msg>
 <arg>${PrijsKlasseFR}</arg>
 <arg>Fourchette de prix</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:34.668534" elapsed="0.008006"/>
+<status status="PASS" start="2025-05-09T15:19:17.844278" elapsed="0.007579"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:34.676835" level="INFO">Verifying element '//h4[contains(., 'Rechercher')]' contains exact text 'Rechercher'.</msg>
+<msg time="2025-05-09T15:19:17.852154" level="INFO">Verifying element '//h4[contains(., 'Rechercher')]' contains exact text 'Rechercher'.</msg>
 <arg>${ZoekenFR}</arg>
 <arg>Rechercher</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:34.676679" elapsed="0.010330"/>
+<status status="PASS" start="2025-05-09T15:19:17.851997" elapsed="0.007649"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:34.687324" level="INFO">Verifying element '//h4[contains(., 'Par catégorie:')]' contains exact text 'Par catégorie:'.</msg>
+<msg time="2025-05-09T15:19:17.859937" level="INFO">Verifying element '//h4[contains(., 'Par catégorie:')]' contains exact text 'Par catégorie:'.</msg>
 <arg>${OpCategorieFR}</arg>
 <arg>Par catégorie:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:34.687155" elapsed="0.010757"/>
+<status status="PASS" start="2025-05-09T15:19:17.859782" elapsed="0.009828"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:34.698240" level="INFO">Verifying element '//h4[contains(., 'Par marque:')]' contains exact text 'Par marque:'.</msg>
+<msg time="2025-05-09T15:19:17.870163" level="INFO">Verifying element '//h4[contains(., 'Par marque:')]' contains exact text 'Par marque:'.</msg>
 <arg>${OpMerkFR}</arg>
 <arg>Par marque:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:34.698065" elapsed="0.011517"/>
+<status status="PASS" start="2025-05-09T15:19:17.869980" elapsed="0.008406"/>
 </kw>
 <tag>homepage</tag>
 <tag>language</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
 <doc>Deze testcase controleert of de Franse taalinstelling zichtbaar is.</doc>
-<status status="PASS" start="2025-05-09T12:37:33.217084" elapsed="1.492583"/>
+<status status="PASS" start="2025-05-09T15:19:16.391656" elapsed="1.486823"/>
 </kw>
 <doc>Deze testcase controleert of de Franse taalinstelling correct werkt.</doc>
 <tag>homepage</tag>
 <tag>language</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:33.215987" elapsed="1.494197"/>
+<status status="PASS" start="2025-05-09T15:19:16.390592" elapsed="1.488205"/>
 </test>
 <test id="s1-t12" name="TC012: Verifieer dat Nederlandse taalinstelling correct werkt" line="72">
 <kw name="Verifieer Nederlandse taalinstelling" owner="common_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:34.711850" level="INFO">Clicking element '//button[contains(text(), 'FR')]'.</msg>
+<msg time="2025-05-09T15:19:17.880920" level="INFO">Clicking element '//button[contains(text(), 'FR')]'.</msg>
 <arg>${Frworld}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:34.711736" elapsed="0.219427"/>
+<status status="PASS" start="2025-05-09T15:19:17.880797" elapsed="0.210541"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:34.931731" level="INFO">Clicking element '//a[contains(text(), 'NL')]'.</msg>
+<msg time="2025-05-09T15:19:18.091644" level="INFO">Clicking element '//a[contains(text(), 'NL')]'.</msg>
 <arg>${NL}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:34.931422" elapsed="0.214644"/>
+<status status="PASS" start="2025-05-09T15:19:18.091487" elapsed="0.215394"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-09T12:37:36.147242" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-09T15:19:19.307775" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-09T12:37:35.146438" elapsed="1.000922"/>
+<status status="PASS" start="2025-05-09T15:19:18.307029" elapsed="1.000853"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:36.147731" level="INFO">Verifying element '//a[contains(text(), 'Inloggen')]' contains exact text 'Inloggen'.</msg>
+<msg time="2025-05-09T15:19:19.308191" level="INFO">Verifying element '//a[contains(text(), 'Inloggen')]' contains exact text 'Inloggen'.</msg>
 <arg>${InloggenNL}</arg>
 <arg>Inloggen</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:36.147528" elapsed="0.009415"/>
+<status status="PASS" start="2025-05-09T15:19:19.308022" elapsed="0.009664"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:36.157273" level="INFO">Verifying element '//h4[contains(., 'Sorteren')]' contains exact text 'Sorteren'.</msg>
+<msg time="2025-05-09T15:19:19.317989" level="INFO">Verifying element '//h4[contains(., 'Sorteren')]' contains exact text 'Sorteren'.</msg>
 <arg>${SorterenNL}</arg>
 <arg>Sorteren</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:36.157095" elapsed="0.013488"/>
+<status status="PASS" start="2025-05-09T15:19:19.317830" elapsed="0.007800"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:36.170963" level="INFO">Verifying element '//h4[contains(., 'Prijsklasse')]' contains exact text 'Prijsklasse'.</msg>
+<msg time="2025-05-09T15:19:19.325932" level="INFO">Verifying element '//h4[contains(., 'Prijsklasse')]' contains exact text 'Prijsklasse'.</msg>
 <arg>${PrijsKlasseNL}</arg>
 <arg>Prijsklasse</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:36.170734" elapsed="0.009743"/>
+<status status="PASS" start="2025-05-09T15:19:19.325771" elapsed="0.011759"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:36.180809" level="INFO">Verifying element '//h4[contains(., 'Zoeken')]' contains exact text 'Zoeken'.</msg>
+<msg time="2025-05-09T15:19:19.337852" level="INFO">Verifying element '//h4[contains(., 'Zoeken')]' contains exact text 'Zoeken'.</msg>
 <arg>${ZoekenNL}</arg>
 <arg>Zoeken</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:36.180629" elapsed="0.008721"/>
+<status status="PASS" start="2025-05-09T15:19:19.337681" elapsed="0.009485"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:36.189674" level="INFO">Verifying element '//h4[contains(., 'Op categorie:')]' contains exact text 'Op categorie:'.</msg>
+<msg time="2025-05-09T15:19:19.347467" level="INFO">Verifying element '//h4[contains(., 'Op categorie:')]' contains exact text 'Op categorie:'.</msg>
 <arg>${OpCategorieNL}</arg>
 <arg>Op categorie:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:36.189500" elapsed="0.009084"/>
+<status status="PASS" start="2025-05-09T15:19:19.347308" elapsed="0.007157"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:36.198907" level="INFO">Verifying element '//h4[contains(., 'Op merk:')]' contains exact text 'Op merk:'.</msg>
+<msg time="2025-05-09T15:19:19.354759" level="INFO">Verifying element '//h4[contains(., 'Op merk:')]' contains exact text 'Op merk:'.</msg>
 <arg>${OpMerkNL}</arg>
 <arg>Op merk:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:36.198734" elapsed="0.008496"/>
+<status status="PASS" start="2025-05-09T15:19:19.354603" elapsed="0.007369"/>
 </kw>
 <tag>homepage</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
 <doc>Deze testcase controleert of de Nederlandse taalinstelling zichtbaar is.</doc>
-<status status="PASS" start="2025-05-09T12:37:34.711580" elapsed="1.495738"/>
+<status status="PASS" start="2025-05-09T15:19:17.880631" elapsed="1.481630"/>
 </kw>
 <doc>Deze testcase controleert of de Nederlandse taalinstelling correct werkt.</doc>
 <tag>homepage</tag>
 <tag>language</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:34.711069" elapsed="1.496729"/>
+<status status="PASS" start="2025-05-09T15:19:17.879886" elapsed="1.482956"/>
 </test>
 <test id="s1-t13" name="TC013: Verifieer dat Turkse taalinstelling correct werkt" line="77">
 <kw name="Verifieer Turkse taalinstelling" owner="common_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:36.210105" level="INFO">Clicking element '//button[contains(text(), 'NL')]'.</msg>
+<msg time="2025-05-09T15:19:19.366435" level="INFO">Clicking element '//button[contains(text(), 'NL')]'.</msg>
 <arg>${NlWorld}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:36.209987" elapsed="0.214382"/>
+<status status="PASS" start="2025-05-09T15:19:19.366089" elapsed="0.215820"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:36.425856" level="INFO">Clicking element '//a[contains(text(), 'TR')]'.</msg>
+<msg time="2025-05-09T15:19:19.582246" level="INFO">Clicking element '//a[contains(text(), 'TR')]'.</msg>
 <arg>${TR}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:36.425063" elapsed="0.219967"/>
+<status status="PASS" start="2025-05-09T15:19:19.582070" elapsed="0.240644"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-09T12:37:37.645925" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-09T15:19:20.823251" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-09T12:37:36.645235" elapsed="1.000865"/>
+<status status="PASS" start="2025-05-09T15:19:19.822894" elapsed="1.000497"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:37.646645" level="INFO">Verifying element '//a[contains(text(), 'Giriş Yap')]' contains exact text 'Giriş Yap'.</msg>
+<msg time="2025-05-09T15:19:20.823853" level="INFO">Verifying element '//a[contains(text(), 'Giriş Yap')]' contains exact text 'Giriş Yap'.</msg>
 <arg>${InloggenTR}</arg>
 <arg>Giriş Yap</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:37.646343" elapsed="0.016921"/>
+<status status="PASS" start="2025-05-09T15:19:20.823597" elapsed="0.014225"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:37.663826" level="INFO">Verifying element '//h4[contains(., 'Sırala')]' contains exact text 'Sırala'.</msg>
+<msg time="2025-05-09T15:19:20.838184" level="INFO">Verifying element '//h4[contains(., 'Sırala')]' contains exact text 'Sırala'.</msg>
 <arg>${SorterenTR}</arg>
 <arg>Sırala</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:37.663634" elapsed="0.010169"/>
+<status status="PASS" start="2025-05-09T15:19:20.837989" elapsed="0.007792"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:37.674097" level="INFO">Verifying element '//h4[contains(., ' Fiyat Aralığı')]' contains exact text 'Fiyat Aralığı'.</msg>
+<msg time="2025-05-09T15:19:20.846134" level="INFO">Verifying element '//h4[contains(., ' Fiyat Aralığı')]' contains exact text 'Fiyat Aralığı'.</msg>
 <arg>${PrijsKlasseTR}</arg>
 <arg>Fiyat Aralığı</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:37.673942" elapsed="0.008161"/>
+<status status="PASS" start="2025-05-09T15:19:20.845973" elapsed="0.008054"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:37.682407" level="INFO">Verifying element '(//h4[contains(., 'Ara')])[2]' contains exact text 'Ara'.</msg>
+<msg time="2025-05-09T15:19:20.854324" level="INFO">Verifying element '(//h4[contains(., 'Ara')])[2]' contains exact text 'Ara'.</msg>
 <arg>${ZoekenTR}</arg>
 <arg>Ara</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:37.682247" elapsed="0.007712"/>
+<status status="PASS" start="2025-05-09T15:19:20.854169" elapsed="0.009752"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:37.690257" level="INFO">Verifying element '//h4[contains(., 'Kategoriye göre:')]' contains exact text 'Kategoriye göre:'.</msg>
+<msg time="2025-05-09T15:19:20.864454" level="INFO">Verifying element '//h4[contains(., 'Kategoriye göre:')]' contains exact text 'Kategoriye göre:'.</msg>
 <arg>${OpCategorieTR}</arg>
 <arg>Kategoriye göre:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:37.690098" elapsed="0.010988"/>
+<status status="PASS" start="2025-05-09T15:19:20.864150" elapsed="0.009372"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:37.701400" level="INFO">Verifying element '//h4[contains(., 'Markaya göre:')]' contains exact text 'Markaya göre:'.</msg>
+<msg time="2025-05-09T15:19:20.873850" level="INFO">Verifying element '//h4[contains(., 'Markaya göre:')]' contains exact text 'Markaya göre:'.</msg>
 <arg>${OpMerkTR}</arg>
 <arg>Markaya göre:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:37.701234" elapsed="0.007510"/>
+<status status="PASS" start="2025-05-09T15:19:20.873673" elapsed="0.006791"/>
 </kw>
 <tag>homepage</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
 <doc>Deze testcase controleert of de Turkse taalinstelling zichtbaar is.</doc>
-<status status="PASS" start="2025-05-09T12:37:36.209824" elapsed="1.499009"/>
+<status status="PASS" start="2025-05-09T15:19:19.365611" elapsed="1.514941"/>
 </kw>
 <doc>Deze testcase controleert of de Turkse taalinstelling correct werkt.</doc>
 <tag>homepage</tag>
 <tag>language</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:36.209059" elapsed="1.500102"/>
+<status status="PASS" start="2025-05-09T15:19:19.364141" elapsed="1.517005"/>
 </test>
 <test id="s1-t14" name="TC014: Verifieer dat Engelse taalinstelling correct werkt" line="82">
 <kw name="Verifieer Engelse taalinstelling" owner="common_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:37.710743" level="INFO">Clicking element '//button[contains(text(), 'TR')]'.</msg>
+<msg time="2025-05-09T15:19:20.883725" level="INFO">Clicking element '//button[contains(text(), 'TR')]'.</msg>
 <arg>${Trworld}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:37.710356" elapsed="0.212369"/>
+<status status="PASS" start="2025-05-09T15:19:20.883614" elapsed="0.210870"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:37.923587" level="INFO">Clicking element '//a[contains(text(), 'EN')]'.</msg>
+<msg time="2025-05-09T15:19:21.095412" level="INFO">Clicking element '//a[contains(text(), 'EN')]'.</msg>
 <arg>${EN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:37.923119" elapsed="0.218180"/>
+<status status="PASS" start="2025-05-09T15:19:21.094938" elapsed="0.217208"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-09T12:37:39.142070" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-09T15:19:22.312989" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-09T12:37:38.141583" elapsed="1.000644"/>
+<status status="PASS" start="2025-05-09T15:19:21.312292" elapsed="1.000862"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:39.142739" level="INFO">Verifying element '//a[text()='Sign in']' contains exact text 'Sign in'.</msg>
+<msg time="2025-05-09T15:19:22.313679" level="INFO">Verifying element '//a[text()='Sign in']' contains exact text 'Sign in'.</msg>
 <arg>${SignIn}</arg>
 <arg>Sign in</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:39.142449" elapsed="0.009186"/>
+<status status="PASS" start="2025-05-09T15:19:22.313392" elapsed="0.009178"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:39.151942" level="INFO">Verifying element '//h4[contains(., 'Sort')]' contains exact text 'Sort'.</msg>
+<msg time="2025-05-09T15:19:22.322862" level="INFO">Verifying element '//h4[contains(., 'Sort')]' contains exact text 'Sort'.</msg>
 <arg>${SorterenEN}</arg>
 <arg>Sort</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:39.151779" elapsed="0.012942"/>
+<status status="PASS" start="2025-05-09T15:19:22.322708" elapsed="0.010907"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:39.165286" level="INFO">Verifying element '//h4[contains(., 'Price Range')]' contains exact text 'Price Range'.</msg>
+<msg time="2025-05-09T15:19:22.334007" level="INFO">Verifying element '//h4[contains(., 'Price Range')]' contains exact text 'Price Range'.</msg>
 <arg>${PrijsKlasseEN}</arg>
 <arg>Price Range</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:39.164877" elapsed="0.008753"/>
+<status status="PASS" start="2025-05-09T15:19:22.333792" elapsed="0.008267"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:39.174481" level="INFO">Verifying element '//h4[contains(., 'Search')]' contains exact text 'Search'.</msg>
+<msg time="2025-05-09T15:19:22.342359" level="INFO">Verifying element '//h4[contains(., 'Search')]' contains exact text 'Search'.</msg>
 <arg>${ZoekenEN}</arg>
 <arg>Search</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:39.174013" elapsed="0.010054"/>
+<status status="PASS" start="2025-05-09T15:19:22.342200" elapsed="0.007349"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:39.184398" level="INFO">Verifying element '//h4[contains(., 'By category:')]' contains exact text 'By category:'.</msg>
+<msg time="2025-05-09T15:19:22.349847" level="INFO">Verifying element '//h4[contains(., 'By category:')]' contains exact text 'By category:'.</msg>
 <arg>${OpCategorieEN}</arg>
 <arg>By category:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:39.184222" elapsed="0.013181"/>
+<status status="PASS" start="2025-05-09T15:19:22.349692" elapsed="0.007032"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:39.197949" level="INFO">Verifying element '//h4[contains(., 'By brand:')]' contains exact text 'By brand:'.</msg>
+<msg time="2025-05-09T15:19:22.357016" level="INFO">Verifying element '//h4[contains(., 'By brand:')]' contains exact text 'By brand:'.</msg>
 <arg>${OpMerkEN}</arg>
 <arg>By brand:</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:39.197722" elapsed="0.010211"/>
+<status status="PASS" start="2025-05-09T15:19:22.356862" elapsed="0.009975"/>
 </kw>
 <tag>homepage</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
 <doc>Deze testcase controleert of de Engelse taalinstelling zichtbaar is.</doc>
-<status status="PASS" start="2025-05-09T12:37:37.710206" elapsed="1.497815"/>
+<status status="PASS" start="2025-05-09T15:19:20.883464" elapsed="1.483480"/>
 </kw>
 <doc>Deze testcase controleert of de Engelse taalinstelling correct werkt.</doc>
 <tag>homepage</tag>
 <tag>language</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:37.709715" elapsed="1.498800"/>
+<status status="PASS" start="2025-05-09T15:19:20.882522" elapsed="1.484687"/>
 </test>
 <test id="s1-t15" name="TC015: Verifieer dat alle submenu onderdelen onder Category werken" line="88">
 <kw name="Verifieer dat alle menu-items onder category werken" owner="common_keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:39.211054" level="INFO">Clicking element '//a[@data-test='nav-categories']'.</msg>
+<msg time="2025-05-09T15:19:22.369568" level="INFO">Clicking element '//a[@data-test='nav-categories']'.</msg>
 <arg>${Categories}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:39.210941" elapsed="0.213798"/>
+<status status="PASS" start="2025-05-09T15:19:22.369452" elapsed="0.211652"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:39.436687" level="INFO">Element '//a[text()='Hand Tools']' is displayed.</msg>
+<msg time="2025-05-09T15:19:22.590360" level="INFO">Element '//a[text()='Hand Tools']' is displayed.</msg>
 <arg>${HandTools}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:39.425368" elapsed="0.011399"/>
+<status status="PASS" start="2025-05-09T15:19:22.581312" elapsed="0.009145"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:39.437054" level="INFO">Clicking element '//a[text()='Hand Tools']'.</msg>
+<msg time="2025-05-09T15:19:22.590747" level="INFO">Clicking element '//a[text()='Hand Tools']'.</msg>
 <arg>${HandTools}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:39.436898" elapsed="0.227544"/>
+<status status="PASS" start="2025-05-09T15:19:22.590589" elapsed="0.231161"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:39.664772" level="INFO">Clicking element '//a[@data-test='nav-categories']'.</msg>
+<msg time="2025-05-09T15:19:22.822207" level="INFO">Clicking element '//a[@data-test='nav-categories']'.</msg>
 <arg>${Categories}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:39.664597" elapsed="0.215080"/>
+<status status="PASS" start="2025-05-09T15:19:22.821966" elapsed="0.217509"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:39.895283" level="INFO">Element '//a[text()='Power Tools']' is displayed.</msg>
+<msg time="2025-05-09T15:19:23.048244" level="INFO">Element '//a[text()='Power Tools']' is displayed.</msg>
 <arg>${PowerTools}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:39.879858" elapsed="0.015514"/>
+<status status="PASS" start="2025-05-09T15:19:23.039624" elapsed="0.008702"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:39.895682" level="INFO">Clicking element '//a[text()='Power Tools']'.</msg>
+<msg time="2025-05-09T15:19:23.048698" level="INFO">Clicking element '//a[text()='Power Tools']'.</msg>
 <arg>${PowerTools}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:39.895515" elapsed="0.220599"/>
+<status status="PASS" start="2025-05-09T15:19:23.048459" elapsed="0.225094"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:40.116956" level="INFO">Clicking element '//a[@data-test='nav-categories']'.</msg>
+<msg time="2025-05-09T15:19:23.273885" level="INFO">Clicking element '//a[@data-test='nav-categories']'.</msg>
 <arg>${Categories}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:40.116430" elapsed="0.228732"/>
+<status status="PASS" start="2025-05-09T15:19:23.273711" elapsed="0.232315"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:40.356767" level="INFO">Element '//a[text()='Other']' is displayed.</msg>
+<msg time="2025-05-09T15:19:23.518152" level="INFO">Element '//a[text()='Other']' is displayed.</msg>
 <arg>${Other}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:40.345767" elapsed="0.011160"/>
+<status status="PASS" start="2025-05-09T15:19:23.506172" elapsed="0.012065"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:40.357593" level="INFO">Clicking element '//a[text()='Other']'.</msg>
+<msg time="2025-05-09T15:19:23.518541" level="INFO">Clicking element '//a[text()='Other']'.</msg>
 <arg>${Other}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:40.357207" elapsed="0.215228"/>
+<status status="PASS" start="2025-05-09T15:19:23.518374" elapsed="0.235066"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:40.572763" level="INFO">Clicking element '//a[@data-test='nav-categories']'.</msg>
+<msg time="2025-05-09T15:19:23.754353" level="INFO">Clicking element '//a[@data-test='nav-categories']'.</msg>
 <arg>${Categories}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:40.572590" elapsed="0.212756"/>
+<status status="PASS" start="2025-05-09T15:19:23.753877" elapsed="0.220339"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:40.796763" level="INFO">Element '//a[text()='Special Tools']' is displayed.</msg>
+<msg time="2025-05-09T15:19:23.982543" level="INFO">Element '//a[text()='Special Tools']' is displayed.</msg>
 <arg>${SpecialTools}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:40.785557" elapsed="0.011294"/>
+<status status="PASS" start="2025-05-09T15:19:23.974483" elapsed="0.008144"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:40.797181" level="INFO">Clicking element '//a[text()='Special Tools']'.</msg>
+<msg time="2025-05-09T15:19:23.982920" level="INFO">Clicking element '//a[text()='Special Tools']'.</msg>
 <arg>${SpecialTools}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:40.796989" elapsed="0.216016"/>
+<status status="PASS" start="2025-05-09T15:19:23.982758" elapsed="0.216207"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:41.013484" level="INFO">Clicking element '//a[@data-test='nav-categories']'.</msg>
+<msg time="2025-05-09T15:19:24.199342" level="INFO">Clicking element '//a[@data-test='nav-categories']'.</msg>
 <arg>${Categories}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:41.013232" elapsed="0.218742"/>
+<status status="PASS" start="2025-05-09T15:19:24.199145" elapsed="0.210521"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:41.256805" level="INFO">Element '//a[text()='Rentals']' is displayed.</msg>
+<msg time="2025-05-09T15:19:24.417880" level="INFO">Element '//a[text()='Rentals']' is displayed.</msg>
 <arg>${Rentals}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-09T12:37:41.232302" elapsed="0.024672"/>
+<status status="PASS" start="2025-05-09T15:19:24.409843" elapsed="0.008118"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:41.257591" level="INFO">Clicking element '//a[text()='Rentals']'.</msg>
+<msg time="2025-05-09T15:19:24.418236" level="INFO">Clicking element '//a[text()='Rentals']'.</msg>
 <arg>${Rentals}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:41.257231" elapsed="0.224393"/>
+<status status="PASS" start="2025-05-09T15:19:24.418086" elapsed="0.217892"/>
 </kw>
-<status status="PASS" start="2025-05-09T12:37:39.210775" elapsed="2.270962"/>
+<status status="PASS" start="2025-05-09T15:19:22.369293" elapsed="2.266777"/>
 </kw>
 <doc>Deze testcase controleert of de submenu onderdelen onder Category werken.</doc>
 <tag>homepage</tag>
 <tag>menu</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:39.209867" elapsed="2.272481"/>
+<status status="PASS" start="2025-05-09T15:19:22.368340" elapsed="2.268344"/>
 </test>
 <test id="s1-t16" name="TC016: verifieer dat het klikken op signin werkt" line="93">
 <kw name="Verifieer dat het klikken op sign in werkt" owner="home_page">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:41.484717" level="INFO">Clicking element '//a[text()='Sign in']'.</msg>
+<msg time="2025-05-09T15:19:24.639022" level="INFO">Clicking element '//a[text()='Sign in']'.</msg>
 <arg>${SignIn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-09T12:37:41.484392" elapsed="0.213418"/>
+<status status="PASS" start="2025-05-09T15:19:24.638898" elapsed="0.211008"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-09T12:37:43.698919" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-05-09T15:19:26.851331" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-09T12:37:41.698034" elapsed="2.001107"/>
+<status status="PASS" start="2025-05-09T15:19:24.850111" elapsed="2.001521"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2025-05-09T12:37:43.710317" level="INFO">Element '//h3[text()='Login']' contains text 'Login'.</msg>
+<msg time="2025-05-09T15:19:26.864523" level="INFO">Element '//h3[text()='Login']' contains text 'Login'.</msg>
 <arg>${LoginTitle}</arg>
 <arg>Login</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2025-05-09T12:37:43.699444" elapsed="0.010948"/>
+<status status="PASS" start="2025-05-09T15:19:26.852031" elapsed="0.012656"/>
 </kw>
 <tag>homepage</tag>
 <tag>search</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
 <doc>Deze testcase controleert of het klikken op de sign in knop werkt.</doc>
-<status status="PASS" start="2025-05-09T12:37:41.484183" elapsed="2.226284"/>
+<status status="PASS" start="2025-05-09T15:19:24.638716" elapsed="2.226071"/>
 </kw>
 <doc>Deze testcase controleert of het klikken op sign in werkt.</doc>
 <tag>homepage</tag>
 <tag>menu</tag>
 <tag>smoke</tag>
 <tag>ui</tag>
-<status status="PASS" start="2025-05-09T12:37:41.483504" elapsed="2.227601"/>
+<status status="PASS" start="2025-05-09T15:19:24.637749" elapsed="2.227327"/>
 </test>
 <test id="s1-t17" name="Verplaats alle schermprints naar submap schermprint" line="102">
 <kw name="Verplaats Screenshots Naar Submap" owner="common_keywords">
 <kw name="Create Directory" owner="OperatingSystem">
-<msg time="2025-05-09T12:37:43.714168" level="INFO" html="true">Created directory '&lt;a href="file://C:\Ontwikkeling\robot-scripts\toolshop-demo\schermprint"&gt;C:\Ontwikkeling\robot-scripts\toolshop-demo\schermprint&lt;/a&gt;'.</msg>
+<msg time="2025-05-09T15:19:26.867218" level="INFO" html="true">Directory '&lt;a href="file://C:\Ontwikkeling\robot-scripts\toolshop-demo\schermprint"&gt;C:\Ontwikkeling\robot-scripts\toolshop-demo\schermprint&lt;/a&gt;' already exists.</msg>
 <arg>${OUTPUT DIR}/schermprint</arg>
 <doc>Creates the specified directory.</doc>
-<status status="PASS" start="2025-05-09T12:37:43.713680" elapsed="0.000531"/>
+<status status="PASS" start="2025-05-09T15:19:26.866958" elapsed="0.000295"/>
 </kw>
 <kw name="Move Files" owner="OperatingSystem">
+<msg time="2025-05-09T15:19:26.871651" level="INFO" html="true">Moved file from '&lt;a href="file://C:\Ontwikkeling\robot-scripts\toolshop-demo\selenium-screenshot-1.png"&gt;C:\Ontwikkeling\robot-scripts\toolshop-demo\selenium-screenshot-1.png&lt;/a&gt;' to '&lt;a href="file://C:\Ontwikkeling\robot-scripts\toolshop-demo\schermprint\selenium-screenshot-1.png"&gt;C:\Ontwikkeling\robot-scripts\toolshop-demo\schermprint\selenium-screenshot-1.png&lt;/a&gt;'.</msg>
+<msg time="2025-05-09T15:19:26.872293" level="INFO" html="true">Moved file from '&lt;a href="file://C:\Ontwikkeling\robot-scripts\toolshop-demo\selenium-screenshot-2.png"&gt;C:\Ontwikkeling\robot-scripts\toolshop-demo\selenium-screenshot-2.png&lt;/a&gt;' to '&lt;a href="file://C:\Ontwikkeling\robot-scripts\toolshop-demo\schermprint\selenium-screenshot-2.png"&gt;C:\Ontwikkeling\robot-scripts\toolshop-demo\schermprint\selenium-screenshot-2.png&lt;/a&gt;'.</msg>
 <arg>${OUTPUT DIR}/*.png</arg>
 <arg>${OUTPUT DIR}/schermprint/</arg>
 <doc>Moves specified files to the target directory.</doc>
-<status status="PASS" start="2025-05-09T12:37:43.714287" elapsed="0.000384"/>
+<status status="PASS" start="2025-05-09T15:19:26.867312" elapsed="0.005037"/>
 </kw>
-<status status="PASS" start="2025-05-09T12:37:43.713528" elapsed="0.001187"/>
+<status status="PASS" start="2025-05-09T15:19:26.866743" elapsed="0.005668"/>
 </kw>
 <doc>Deze testcase verplaatst alle schermprints naar de submap schermprint.</doc>
-<status status="PASS" start="2025-05-09T12:37:43.712578" elapsed="0.002535"/>
+<status status="PASS" start="2025-05-09T15:19:26.866070" elapsed="0.006581"/>
 </test>
 <kw name="Sluit de browser" owner="common_keywords" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-09T12:37:43.716858" elapsed="2.777872"/>
+<status status="PASS" start="2025-05-09T15:19:26.874134" elapsed="2.796023"/>
 </kw>
-<status status="PASS" start="2025-05-09T12:37:43.716691" elapsed="2.778269"/>
+<status status="PASS" start="2025-05-09T15:19:26.874002" elapsed="2.796268"/>
 </kw>
-<status status="PASS" start="2025-05-09T12:37:11.357092" elapsed="35.137951"/>
+<status status="FAIL" start="2025-05-09T15:18:54.560595" elapsed="35.109706"/>
 </suite>
 <statistics>
 <total>
-<stat pass="17" fail="0" skip="0">All Tests</stat>
+<stat pass="15" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="2" fail="0" skip="0">footer</stat>
-<stat pass="15" fail="0" skip="0">homepage</stat>
+<stat pass="14" fail="1" skip="0">homepage</stat>
 <stat pass="6" fail="0" skip="0">language</stat>
 <stat pass="2" fail="0" skip="0">menu</stat>
-<stat pass="3" fail="0" skip="0">search</stat>
-<stat pass="16" fail="0" skip="0">smoke</stat>
-<stat pass="16" fail="0" skip="0">ui</stat>
+<stat pass="1" fail="2" skip="0">search</stat>
+<stat pass="14" fail="2" skip="0">smoke</stat>
+<stat pass="14" fail="2" skip="0">ui</stat>
 </tag>
 <suite>
-<stat name="Home Page Test" id="s1" pass="17" fail="0" skip="0">Home Page Test</stat>
+<stat name="Home Page Test" id="s1" pass="15" fail="2" skip="0">Home Page Test</stat>
 </suite>
 </statistics>
 <errors>

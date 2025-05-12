@@ -6,7 +6,7 @@ Resource    ../resources/variables.robot
 
 *** Keywords ***
 Open chrome en ga naar toolshopdemo
-        Open Browser    ${URL}    ${BROWSER}
+        Open Browser    ${URL}    ${BROWSER}    options=${HEADLESS_OPTIONS}
         Maximize Browser Window
 
 Controleer homepage titel

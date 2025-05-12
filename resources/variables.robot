@@ -1,6 +1,7 @@
 *** Variables ***
 #Algemene instellingen
-${BROWSER}    firefox
+${BROWSER}   Firefox
+${HEADLESS_OPTIONS}  --headless --no-sandbox --disable-gpu
 ${TIMEOUT}    10s
 ${RETRY_ATTEMPTS}    3
 
@@ -14,3 +15,4 @@ ${footerURL5}    https://unsplash.com/photos/t5YUoHW6zRo
 
 ${Username}    kilictesting@gmail.com
 ${UserPassword}    Fenerbahce@1907!
+
