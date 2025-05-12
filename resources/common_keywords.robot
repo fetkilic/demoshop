@@ -6,8 +6,10 @@ Resource    ../resources/variables.robot
 
 *** Keywords ***
 Open chrome en ga naar toolshopdemo
-        Open Browser    ${URL}    ${BROWSER}    options=${HEADLESS_OPTIONS}
-        Maximize Browser Window
+        [Arguments]  ${url}
+        Open Browser  ${url}  ${BROWSER}  options=${HEADLESS_OPTIONS}
+        #Maximize Browser Window
+        
 
 Controleer homepage titel
     Title Should Be    Practice Software Testing - Toolshop - v5.0
