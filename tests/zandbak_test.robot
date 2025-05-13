@@ -13,5 +13,6 @@ Suite Teardown    Sluit de browser
 TC001: Verifieer homepage titel en klik vervolgens op menu-item Home
     [Documentation]    Deze testcase verifieert of de homepage titel correct is en klikt daarna op het menu-item "Home".
     [Tags]    smoke    homepage    ui  
-    Controleer homepage titel
+    Open Browser    https://practicesoftwaretesting.com/
+    Title Should Be    Practice Software Testing - Toolshop - v5.0
     
