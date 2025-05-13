@@ -10,7 +10,8 @@ Suite Teardown    Sluit de browser
 
 
 *** Test Cases ***
-Verifieer of de pointer naar rechts kan worden gesleept
-    [Documentation]    Deze testcase controleert of de pointer naar rechts kan worden gesleept.
-    [Tags]    smoke    homepage    ui
-    Sleep de pointer naar rechts
+TC001: Verifieer homepage titel en klik vervolgens op menu-item Home
+    [Documentation]    Deze testcase verifieert of de homepage titel correct is en klikt daarna op het menu-item "Home".
+    [Tags]    smoke    homepage    ui  
+    Controleer homepage titel
+    

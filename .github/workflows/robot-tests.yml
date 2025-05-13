@@ -35,4 +35,4 @@ jobs:
 
       - name: Run Robot Framework Tests
         run: |
-          robot ./tests/home_page_test.robot
+          robot ./tests/zandbak_test.robot
