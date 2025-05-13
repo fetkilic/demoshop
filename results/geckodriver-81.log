@@ -1,0 +1,19 @@
+1747138578322	geckodriver	INFO	Listening on 127.0.0.1:53188
+1747138581494	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53189" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FETULL~1\\AppData\\Local\\Temp\\rust_mozprofileUw7pqt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1747138582162	Marionette	INFO	Marionette enabled
+1747138582404	Marionette	INFO	Listening on port 53207
+WebDriver BiDi listening on ws://127.0.0.1:53189
+Read port: 53207
+1747138582589	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53189/devtools/browser/ac925de4-76da-4d1e-921b-590f25d7c7fc
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://practicesoftwaretesting.com."
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+1747138611182	Marionette	INFO	Stopped listening on port 53207
+Dynamically enable window occlusion 1
+JavaScript warning: https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js, line 1: Script terminated by timeout at:
+j@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:21451
+J@https://practicesoftwaretesting.com/polyfills.7c108f25644b5289.js:1:21840
+

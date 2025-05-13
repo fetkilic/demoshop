@@ -25,10 +25,12 @@ Controleer zoekresultaat
     [Arguments]    ${zoekterm}
     Element Should Contain    ${searchResult}    Searched for: ${zoekterm}
 
+
 Controleer productdetails
     Element Should Contain    ${Product1}     Combination Pliers
     Element Should Contain    ${PriceProduct1}    $14.15
     Element Should Be Visible   ${AltTextProduct1}
+    Element Should Be Visible    ${LoginButton}
 
 Verifieer dat geen resultaten worden gevonden bij ongeldige zoekterm
     [Arguments]    ${zoekterm}

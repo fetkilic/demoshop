@@ -6,8 +6,7 @@ Resource    ../resources/variables.robot
 
 *** Keywords ***
 Open chrome en ga naar toolshopdemo
-        [Arguments]  ${url}
-        Open Browser  ${url}  ${BROWSER}  options=${HEADLESS_OPTIONS}
+        Open Browser  ${url}  ${BROWSER}
         #Maximize Browser Window
         
 
