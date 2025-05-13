@@ -1,7 +1,7 @@
 *** Variables ***
 #Algemene instellingen
 ${BROWSER}   Firefox
-${HEADLESS_OPTIONS}  --headless --no-sandbox --disable-gpu
+${HEADLESS}          --headless --disable-gpu --no-sandbox
 ${TIMEOUT}    10s
 ${RETRY_ATTEMPTS}    3
 
