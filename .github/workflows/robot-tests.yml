@@ -2,9 +2,9 @@ name: Robot Framework Tests
 
 on:
   push:
-    branches: [master, main]
+    branches: [main, master]
   pull_request:
-    branches: [master, main]
+    branches: [main, master]
 
 jobs:
   test:
@@ -19,10 +19,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install dependencies + Chrome auto-installer
         run: |
           pip install --upgrade pip
-          pip install robotframework selenium
+          pip install robotframework selenium chromedriver-autoinstaller
 
       - name: Install Google Chrome
         run: |
@@ -32,16 +32,7 @@ jobs:
           sudo apt install -y ./google-chrome-stable_current_amd64.deb
           google-chrome --version
 
-      - name: Install ChromeDriver
+      - name: Run Robot Framework Tests (headless, via auto-driver)
         run: |
-          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
-          DRIVER_VERSION=$(wget -qO- "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_${CHROME_VERSION}" || true)
-          wget -N https://chromedriver.storage.googleapis.com/${DRIVER_VERSION}/chromedriver_linux64.zip || true
-          unzip chromedriver_linux64.zip
-          sudo mv chromedriver /usr/local/bin/
-          chmod +x /usr/local/bin/chromedriver
-          chromedriver --version
-
-      - name: Run Robot Framework Tests (headless)
-        run: |
+          python -c "import chromedriver_autoinstaller; chromedriver_autoinstaller.install()"
           robot --variable BROWSER:chrome --variable HEADLESS:"--headless --no-sandbox --disable-gpu" ./tests/zandbak_test.robot
